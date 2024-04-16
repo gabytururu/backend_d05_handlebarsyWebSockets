@@ -1,15 +1,22 @@
-<h1>Lista de Productos ¡En Vivo! (Real Time) </h1>
-<hr>
-<hr>
-<br>
-<h3>Productos Disponibles:</h3>
-<ul id="productsList">
-    {{#each products}}
-        <li>{{title}}</li>
-    {{/each}}
-</ul>
+<div class="mainContainer">
+    <div class="titles">
+        <h1>Tus productos ¡RealTime!</h1>
+        <a href="/" class="href">Volver al inicio</a>
+    </div>
+    <div class="productsContainer">         
+        <h3>Productos Disponibles (live!):</h3>
+        <div class="productsList">
+            <ul class="ul" id="ulcontainer">
+                {{#each products}}
+                    <div class="productCard">
+                        <li><strong>{{title}}:</strong> {{description}}</li>
+                    </div>
+                {{/each}}
+            </ul>
+        </div>    
+    </div>
+</div>
 
-<a href="/" class="href">Volver al Inicio</a>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/realtime.js"></script>

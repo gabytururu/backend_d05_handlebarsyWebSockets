@@ -9,7 +9,6 @@ router.get("/",async(req,res)=>{
         let products
         try{
             products = await productManager.getProducts()
-            console.log(products)
             const limit  = req.query.limit
             if(limit && limit > 0){
                 products=products.slice(0,limit)
@@ -35,7 +34,7 @@ router.get("/realtime",async(req,res)=>{
     let products
     try{
         products = await productManager.getProducts()
-        console.log(products)
+        //console.log(products)
         const limit  = req.query.limit
         if(limit && limit > 0){
             products=products.slice(0,limit)
@@ -48,6 +47,7 @@ router.get("/realtime",async(req,res)=>{
             message:err.message
         })
     }
+
     
     res.setHeader('Content-Type', 'text/html')
     res.status(200).render('realTimeProducts', {

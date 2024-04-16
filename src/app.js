@@ -28,7 +28,12 @@ app.use("/api/carts/", cartsRouter)
 app.use("/", vistasRouter)
 
 const server=app.listen(PORT,()=>{
-    console.log(`PrimeraEntrega_APP is now Live on Port ${PORT}`)
+    console.log(`Desafio5_Websockets&handlebars is now Live on Port ${PORT}`)
 })
 io = new Server(server)
+
+io.on("connection", socket=>{
+    console.log(`Realtime products view has a Live User Connected with id: ${socket.id}`)
+})
+
 module.exports={io}

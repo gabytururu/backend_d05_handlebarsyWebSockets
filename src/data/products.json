@@ -2,151 +2,71 @@
   {
     "id": 1,
     "status": true,
-    "title": "producto prueba",
-    "description": "Este es un producto de prueba",
+    "title": "Producto de prueba A",
+    "description": "producto prueba A Una descripcion de prueba",
     "price": 200,
-    "thumbnails": "img path tbd",
+    "thumbnails": "tbd",
     "code": "111",
     "stock": 2
   },
   {
     "id": 2,
     "status": true,
-    "title": "cambios con put ",
-    "description": "cambios de stock hechos con PUT final testing",
+    "title": "Producto de prueba B",
+    "description": "Una descripcion de prueba",
     "price": 200,
-    "thumbnails": "img path tbd",
-    "code": "222",
-    "stock": 200
+    "thumbnails": "tbd",
+    "code": "2222",
+    "stock": 2
   },
   {
     "id": 4,
     "status": true,
-    "title": "cambios con put ",
-    "description": "cambios de stock hechos con PUT final testing",
+    "title": "Producto de prueba 4",
+    "description": "Una descripcion de prueba",
     "price": 200,
-    "thumbnails": "img path tbd",
+    "thumbnails": "tbd",
     "code": "444",
-    "stock": 450
+    "stock": 2
   },
   {
     "id": 5,
     "status": true,
-    "title": "producto prueba",
-    "description": "Este es un producto de prueba",
+    "title": "Producto de prueba 5",
+    "description": "Una descripcion de prueba",
     "price": 200,
-    "thumbnails": "img path tbd",
+    "thumbnails": "tbd",
     "code": "555",
     "stock": 2
   },
   {
     "id": 6,
     "status": true,
-    "title": "carrito de juguete",
-    "description": "Este es un producto de prueba",
+    "title": "Producto de prueba 8",
+    "description": "Una descripcion de prueba",
     "price": 200,
-    "thumbnails": "img path tbd",
-    "code": "asdfa",
+    "thumbnails": "tbd",
+    "code": "888",
     "stock": 2
   },
   {
     "id": 7,
     "status": true,
-    "title": "arnes de escalada",
-    "description": "Este es un producto de prueba",
+    "title": "Producto de prueba 9",
+    "description": "Una descripcion de prueba",
     "price": 200,
-    "thumbnails": "img path tbd",
-    "code": "aaaaaaa",
+    "thumbnails": "tbd",
+    "code": "999",
     "stock": 2
   },
   {
     "id": 8,
     "status": true,
-    "title": "cuerda roja de escalada",
-    "description": "Este es un producto de prueba",
+    "title": "Producto de prueba 10",
+    "description": "Una descripcion de prueba",
     "price": 200,
-    "thumbnails": "img path tbd",
-    "code": "ccc",
-    "stock": 2
-  },
-  {
-    "id": 9,
-    "status": true,
-    "title": "cuerda roja de escalada",
-    "description": "Este es un producto de prueba",
-    "price": 200,
-    "thumbnails": "img path tbd",
-    "code": "cccdfg",
-    "stock": 2
-  },
-  {
-    "id": 10,
-    "status": true,
-    "title": "cuerda verde de escalada",
-    "description": "Este es un producto de prueba",
-    "price": 200,
-    "thumbnails": "img path tbd",
-    "code": "cccdfgg",
-    "stock": 2
-  },
-  {
-    "id": 11,
-    "status": true,
-    "title": "gatas lasprotiva azules de escalada",
-    "description": "Este es un producto de prueba",
-    "price": 200,
-    "thumbnails": "img path tbd",
-    "code": "12121212",
-    "stock": 2
-  },
-  {
-    "id": 12,
-    "status": true,
-    "title": "gatas lasprotiva negras de escalada",
-    "description": "Este es un producto de prueba",
-    "price": 200,
-    "thumbnails": "img path tbd",
-    "code": "1212121asdfasdf2",
-    "stock": 2
-  },
-  {
-    "id": 13,
-    "status": true,
-    "title": "gatas lasprotiva amarillas de escalada",
-    "description": "Este es un producto de prueba",
-    "price": 200,
-    "thumbnails": "img path tbd",
-    "code": "1212asdfadf121asdfasdf2",
-    "stock": 2
-  },
-  {
-    "id": 14,
-    "status": true,
-    "title": "gatas lasprotiva amarillas de escalada",
-    "description": "Este es un producto de prueba",
-    "price": 200,
-    "thumbnails": "img path tbd",
-    "code": "asdfew",
-    "stock": 2
-  },
-  {
-    "id": 15,
-    "status": true,
-    "title": "gatas lasprotiva amarillas de escalada",
-    "description": "Este es un producto de prueba",
-    "price": 200,
-    "thumbnails": "img path tbd",
-    "code": "asdfwereew",
-    "stock": 2
-  },
-  {
-    "id": 16,
-    "status": true,
-    "title": "gatas lasprotiva amarillas de escalada",
-    "description": "Este es un producto de prueba",
-    "price": 200,
-    "thumbnails": "img path tbd",
-    "code": "rrrrrr",
+    "thumbnails": "tbd",
+    "code": "1010",
     "stock": 2
   }
 ]

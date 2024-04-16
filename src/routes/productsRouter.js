@@ -18,7 +18,7 @@ router.get('/',async(req,res)=>{
 router.get('/:id',async(req,res)=>{
     let id = req.params.id
     numericId = Number(id)
-    //tbd - explore moving validation to dao
+    
     if(isNaN(numericId)){
         return res.status(400).json({
             error:'ERROR: Id format not valid',
@@ -58,37 +58,52 @@ router.post('/', async(req, res)=>{
             message: err.message
         })
     }
-    req.io.emit("newProduct", prodToPost)
+
+    if(prodToPost.status === 'SUCCESS'){
+        req.io.emit("newProduct", prodToPost)
+    }
+    
     return res.status(200).json(prodToPost)
 })  
 
 router.put('/:id',async(req,res)=>{
     let id= req.params.id
     let propsToUpdate = req.body
+    let productUpdate;
     id=Number(id)
+    
     try{
-        let productUpdate = await productManager.updateProductById(id,propsToUpdate)
-        return res.status(200).json(productUpdate)
+        productUpdate = await productManager.updateProductById(id,propsToUpdate)
+        
     }catch(err){
         return res.status(400).json({
             error: err.error,
             message: err.message
         })
     }
+    return res.status(200).json(productUpdate)
 })
 
 router.delete('/:id', async(req,res)=>{
     let id=req.params.id
     id=Number(id)
+    let prodToDelete;
+
     try{
-        const prodToDelete = await productManager.deleteProductById(id)
-        res.status(200).json(prodToDelete)
+        prodToDelete = await productManager.deleteProductById(id)       
     }catch(err){
         return res.status(400).json({
             error: err.error,
             message: err.message
         })
     }
+
+    if(prodToDelete.status === 'SUCCESS'){
+        const productsListPostDel= await productManager.getProducts()
+        req.io.emit("productDeleted",productsListPostDel)
+    }
+    
+    return res.status(200).json(prodToDelete)
 })
 
 router.get("*",(req,res)=>{

@@ -1,10 +1,19 @@
-<h1>Bienvenido. Acá están tus Productos Disponibles</h1>
-<hr>
-<br>
-<h3>Productos Disponibles:</h3>
-<ul>
-    {{#each products}}
-        <li>{{title}}</li>
-    {{/each}}
-</ul>
-<a href="/realTime" class="href">Ir a Catálogo En Vivo (Realtime!)</a>
+<div class="mainContainer">
+    <div class="titles">
+        <h1>Bienvenid@ a la Tienda</h1>
+        <a href="/realTime" class="href">Ir a Catálogo En Vivo (Realtime!)</a>
+    </div>
+    <div class="productsContainer">         
+        <h3>Productos Disponibles:</h3>
+        <div class="productsList">
+            <ul class="ul">
+                {{#each products}}
+                    <div class="productCard">
+                        <li><strong>{{title}}:</strong> {{description}}</li>
+                    </div>
+                {{/each}}
+            </ul>
+        </div>    
+    </div>
+</div>
+
