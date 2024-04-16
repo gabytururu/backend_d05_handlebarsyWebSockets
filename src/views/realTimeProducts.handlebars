@@ -1,4 +1,15 @@
 <h1>Lista de Productos ¡En Vivo! (Real Time) </h1>
 <hr>
+<hr>
+<br>
+<h3>Productos Disponibles:</h3>
+<ul id="productsList">
+    {{#each products}}
+        <li>{{title}}</li>
+    {{/each}}
+</ul>
 
 <a href="/" class="href">Volver al Inicio</a>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realtime.js"></script>

@@ -39,8 +39,9 @@ router.get('/:id',async(req,res)=>{
 
 router.post('/', async(req, res)=>{
     const {title, description, code, price, stock,category,thumbnails} = req.body
+    let prodToPost;
     try{
-        const prodToPost = await productManager.addProduct({
+        prodToPost = await productManager.addProduct({
             id: 'tbd',
             title,
             description,
@@ -50,14 +51,15 @@ router.post('/', async(req, res)=>{
             stock,
             category,
             thumbnails: thumbnails || 'tbd'
-        })
-        return res.status(200).json(prodToPost)
+        })  
     }catch(err){
         return res.status(400).json({
             error: err.error,
             message: err.message
         })
     }
+    req.io.emit("newProduct", prodToPost)
+    return res.status(200).json(prodToPost)
 })  
 
 router.put('/:id',async(req,res)=>{

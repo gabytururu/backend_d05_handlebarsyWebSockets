@@ -38,5 +38,115 @@
     "thumbnails": "img path tbd",
     "code": "555",
     "stock": 2
+  },
+  {
+    "id": 6,
+    "status": true,
+    "title": "carrito de juguete",
+    "description": "Este es un producto de prueba",
+    "price": 200,
+    "thumbnails": "img path tbd",
+    "code": "asdfa",
+    "stock": 2
+  },
+  {
+    "id": 7,
+    "status": true,
+    "title": "arnes de escalada",
+    "description": "Este es un producto de prueba",
+    "price": 200,
+    "thumbnails": "img path tbd",
+    "code": "aaaaaaa",
+    "stock": 2
+  },
+  {
+    "id": 8,
+    "status": true,
+    "title": "cuerda roja de escalada",
+    "description": "Este es un producto de prueba",
+    "price": 200,
+    "thumbnails": "img path tbd",
+    "code": "ccc",
+    "stock": 2
+  },
+  {
+    "id": 9,
+    "status": true,
+    "title": "cuerda roja de escalada",
+    "description": "Este es un producto de prueba",
+    "price": 200,
+    "thumbnails": "img path tbd",
+    "code": "cccdfg",
+    "stock": 2
+  },
+  {
+    "id": 10,
+    "status": true,
+    "title": "cuerda verde de escalada",
+    "description": "Este es un producto de prueba",
+    "price": 200,
+    "thumbnails": "img path tbd",
+    "code": "cccdfgg",
+    "stock": 2
+  },
+  {
+    "id": 11,
+    "status": true,
+    "title": "gatas lasprotiva azules de escalada",
+    "description": "Este es un producto de prueba",
+    "price": 200,
+    "thumbnails": "img path tbd",
+    "code": "12121212",
+    "stock": 2
+  },
+  {
+    "id": 12,
+    "status": true,
+    "title": "gatas lasprotiva negras de escalada",
+    "description": "Este es un producto de prueba",
+    "price": 200,
+    "thumbnails": "img path tbd",
+    "code": "1212121asdfasdf2",
+    "stock": 2
+  },
+  {
+    "id": 13,
+    "status": true,
+    "title": "gatas lasprotiva amarillas de escalada",
+    "description": "Este es un producto de prueba",
+    "price": 200,
+    "thumbnails": "img path tbd",
+    "code": "1212asdfadf121asdfasdf2",
+    "stock": 2
+  },
+  {
+    "id": 14,
+    "status": true,
+    "title": "gatas lasprotiva amarillas de escalada",
+    "description": "Este es un producto de prueba",
+    "price": 200,
+    "thumbnails": "img path tbd",
+    "code": "asdfew",
+    "stock": 2
+  },
+  {
+    "id": 15,
+    "status": true,
+    "title": "gatas lasprotiva amarillas de escalada",
+    "description": "Este es un producto de prueba",
+    "price": 200,
+    "thumbnails": "img path tbd",
+    "code": "asdfwereew",
+    "stock": 2
+  },
+  {
+    "id": 16,
+    "status": true,
+    "title": "gatas lasprotiva amarillas de escalada",
+    "description": "Este es un producto de prueba",
+    "price": 200,
+    "thumbnails": "img path tbd",
+    "code": "rrrrrr",
+    "stock": 2
   }
 ]
